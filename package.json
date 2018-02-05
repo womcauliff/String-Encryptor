@@ -2,13 +2,13 @@
   "name": "01-string-encryption",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://womcauliff.github.io/String-Encryptor",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "react": "^16.2.0",
     "react-automata": "^1.2.0",
     "react-dom": "^16.2.0",
-    "reactstrap": "^5.0.0-beta",
-    "xstate": "^3.0.3"
+    "reactstrap": "^5.0.0-beta"
   },
   "devDependencies": {
     "eslint": "^4.16.0",
@@ -20,6 +20,8 @@
     "react-scripts": "1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
