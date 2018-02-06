@@ -4,8 +4,6 @@ export function allX(source) {
 }
 
 export function asciiShift(source, shiftAmount) {
-  console.log(source);
-  console.log(shiftAmount);
   return source.split('')
     .map(l => String.fromCharCode(l.charCodeAt() + shiftAmount));
 }
