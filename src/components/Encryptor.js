@@ -102,6 +102,7 @@ class Encryptor extends Component {
                 type="select"
                 name="encryptionmethod"
                 id="encryptionmethod"
+                autoFocus
               >
                 <option value="allX">Encryption Method A</option>
                 <option value="shiftOne">Encryption Method B</option>
@@ -121,6 +122,7 @@ class Encryptor extends Component {
                 type="text"
                 name="sourcestring"
                 id="sourcestring"
+                autoFocus
               />
             </FormGroup>
             <Button>Encrypt</Button>
