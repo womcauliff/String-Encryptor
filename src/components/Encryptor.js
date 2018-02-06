@@ -81,7 +81,7 @@ class Encryptor extends Component {
                 this.props.transition('EXIT_CLICKED');
               }}
             >
-              X
+              <span aria-hidden>&times;</span>
             </Button>
             <Button
               onClick={
@@ -95,7 +95,7 @@ class Encryptor extends Component {
         <State value="2">
           <Form onSubmit={this.handleEncryptionMethodSubmit}>
             <FormGroup>
-              <Label for="encryptionmethod">Select Encryption Method:</Label>
+              <Label for="encryptionmethod">Select One of the Available Encryption Methods:</Label>
               <Input
                 onChange={this.handleEncryptionMethodChange}
                 value={this.state.encryptionMethod}
@@ -103,9 +103,9 @@ class Encryptor extends Component {
                 name="encryptionmethod"
                 id="encryptionmethod"
               >
-                <option>allX</option>
-                <option>shiftOne</option>
-                <option>shiftThree</option>
+                <option value="allX">Encryption Method A</option>
+                <option value="shiftOne">Encryption Method B</option>
+                <option value="shiftThree">Encryption Method C</option>
               </Input>
             </FormGroup>
             <Button>Submit</Button>
@@ -114,7 +114,7 @@ class Encryptor extends Component {
         <State value="3">
           <Form onSubmit={this.handleSourceSubmit}>
             <FormGroup>
-              <Label for="sourcestring">String to Encrypt:</Label>
+              <Label for="sourcestring">Enter the String to Encrypt:</Label>
               <Input
                 onChange={this.handleSourceChange}
                 value={this.state.sourceString}
@@ -123,7 +123,7 @@ class Encryptor extends Component {
                 id="sourcestring"
               />
             </FormGroup>
-            <Button>Submit</Button>
+            <Button>Encrypt</Button>
           </Form>
         </State>
         <State value="4">
