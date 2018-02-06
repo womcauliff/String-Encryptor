@@ -4,12 +4,13 @@ import {
   Container,
   Row,
 } from 'reactstrap';
+import './App.css';
 
 import Encryptor from './components/Encryptor';
 
 function App() {
   return (
-    <Container>
+    <Container className="App">
       <Row>
         <Col>
           <h1>String Encryptor</h1>
