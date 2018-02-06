@@ -138,9 +138,11 @@ class Encryptor extends Component {
           </Button>
         </State>
 
-        <p>Source String: {this.state.sourceString}</p>
-        <p>Encrypted String: {this.state.encryptedString}</p>
-        <p>State: {JSON.stringify(this.props.machineState, null, 2)}</p>
+        <State value={['1', '4']}>
+          <h3>Source String: {this.state.sourceString}</h3>
+          <h3>Encrypted String: {this.state.encryptedString}</h3>
+          <p>State: {JSON.stringify(this.props.machineState, null, 2)}</p>
+        </State>
       </div>
     );
   }
